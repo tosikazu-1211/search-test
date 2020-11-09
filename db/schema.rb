@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_09_074428) do
+ActiveRecord::Schema.define(version: 2020_11_09_075004) do
 
   create_table "prefectures", force: :cascade do |t|
     t.string "name"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_074428) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "gender", default: 0, null: false
+    t.integer "gender"
     t.date "birthday"
     t.integer "prefecture_id"
     t.datetime "created_at", null: false
@@ -28,5 +28,4 @@ ActiveRecord::Schema.define(version: 2020_11_09_074428) do
     t.index ["prefecture_id"], name: "index_users_on_prefecture_id"
   end
 
-  add_foreign_key "users", "prefectures"
 end

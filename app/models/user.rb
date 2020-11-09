@@ -7,7 +7,7 @@ class User < ApplicationRecord
 		return if search_params.blank?
 
 		name_like(search_params[:name])
-		.gender_is(search_params[gender])
+		.gender_is(search_params[:gender])
 		.birthday_from(search_params[:birthday_from])
 		.birthday_to(search_params[:birthday_to])
 		.prefecture_id_is(search_params[:prefecture_id])
