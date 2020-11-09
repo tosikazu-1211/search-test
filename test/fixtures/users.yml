@@ -1,15 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user: MyString
   name: MyString
   gender: 1
-  birthday: 2020-11-08
+  birthday: 2020-11-09
   prefecture: one
 
 two:
-  user: MyString
   name: MyString
   gender: 1
-  birthday: 2020-11-08
+  birthday: 2020-11-09
   prefecture: two
